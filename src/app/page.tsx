@@ -1,6 +1,8 @@
 "use client";
+import dynamic from 'next/dynamic';
 
-import MapClient from "./components/MapClient";
+const MapClient = dynamic(() => import('./components/MapClient'), { ssr: false });
+
 export default function HomePage() {
   return (
     <div>
