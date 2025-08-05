@@ -1,7 +1,10 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import MapClient from "./components/MapClient";
+export default function HomePage() {
   return (
-    <div className="">Musician Map</div>
+    <div>
+      <MapClient />
+    </div>
   );
 }
